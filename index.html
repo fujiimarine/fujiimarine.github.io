@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
     <title>一太郎switch</title>
 </head>
 <body>
@@ -11,9 +12,15 @@
     </script>
     
     <p><a onClick="sound()">このテキストを押すと挨拶します！</a></p>
- 
-    <audio id="sound-file" preload="auto">
-	<source src="test.mp3" type="audio/mp3">
+    <table>
+        <tr>
+            <td><div onClick="sound(1)">1</div></td>
+            <td><div onClick="sound(2)">2</div></td>
+            <td><div onClick="sound(1)">3</div></td>
+        </tr>
+    </table>
+    <audio id="sound1" preload="auto" src="test.mp3" type="audio/mp3">
+    <audio id="sound2" preload="auto" src="2.mp3" type="audio/mp3"></audio>
 </audio>
 </body>
 </html>
