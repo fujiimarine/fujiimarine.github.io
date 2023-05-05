@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音声ファイル再生ページ</title>
+	<style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+		.button {
+			display: inline-block;
+			margin: 5px;
+			padding: 10px 15px;
+			font-size: 16px;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button class="button" onclick="playAudio('1.mp3')">あ</button>
+		<button class="button" onclick="playAudio('2.mp3')">い</button>
+		<button class="button" onclick="playAudio('3.mp3')">う</button>
+		<button class="button" onclick="playAudio('4.mp3')">え</button>
+		<button class="button" onclick="playAudio('5.mp3')">お</button>
+    </div>
+    <div>
+		<!-- 1行目 -->
+        
+		<button class="button" onclick="playAudio('11.mp3')">か</button>
+		<button class="button" onclick="playAudio('12.mp3')">き</button>
+		<button class="button" onclick="playAudio('13.mp3')">く</button>
+		<button class="button" onclick="playAudio('14.mp3')">け</button>
+		<button class="button" onclick="playAudio('15.mp3')">こ</button>
+    </div>
+    <div>
+		<!-- 2行目 -->
+		<button class="button" onclick="playAudio('21.mp3')">さ</button>
+		<button class="button" onclick="playAudio('22.mp3')">し</button>
+		<button class="button" onclick="playAudio('23.mp3')">す</button>
+		<button class="button" onclick="playAudio('24.mp3')">せ</button>
+		<button class="button" onclick="playAudio('25.mp3')">そ</button>
+    </div>
+    <div>
+		<!-- 3行目 -->
+		<button class="button" onclick="playAudio('31.mp3')">た</button>
+		<button class="button" onclick="playAudio('32.mp3')">ち</button>
+		<button class="button" onclick="playAudio('33.mp3')">つ</button>
+		<button class="button" onclick="playAudio('34.mp3')">て</button>
+		<button class="button" onclick="playAudio('35.mp3')">と</button>
+    </div>
+    <div>
+		<!-- 4行目 -->
+		<button class="button" onclick="playAudio('41.mp3')">な</button>
+		<button class="button" onclick="playAudio('42.mp3')">に</button>
+		<button class="button" onclick="playAudio('43.mp3')">ぬ</button>
+		<button class="button" onclick="playAudio('44.mp3')">ね</button>
+		<button class="button" onclick="playAudio('45.mp3')">の</button>
+    </div>
+    <div>
+		<!-- 5行目 -->
+		<button class="button" onclick="playAudio('51.mp3')">は</button>
+		<button class="button" onclick="playAudio('52.mp3')">ひ</button>
+        <button class="button" onclick="playAudio('53.mp3')">ふ</button>
+        <button class="button" onclick="playAudio('54.mp3')">へ</button>
+        <button class="button" onclick="playAudio('55.mp3')">ほ</button>
+    </div>
+    <div>
+        <!-- 6行目 -->
+        <button class="button" onclick="playAudio('61.mp3')">ま</button>
+        <button class="button" onclick="playAudio('62.mp3')">み</button>
+        <button class="button" onclick="playAudio('63.mp3')">む</button>
+        <button class="button" onclick="playAudio('64.mp3')">め</button>
+        <button class="button" onclick="playAudio('65.mp3')">も</button>
+    </div>
+    <div>
+        <!-- 7行目 -->
+        <button class="button" onclick="playAudio('71.mp3')">や</button>
+        <button class="button" onclick="playAudio('72.mp3')">　</button>
+        <button class="button" onclick="playAudio('73.mp3')">ゆ</button>
+        <button class="button" onclick="playAudio('74.mp3')">　</button>
+        <button class="button" onclick="playAudio('75.mp3')">よ</button>
+    </div>
+    <div>
+        <!-- 8行目 -->
+        <button class="button" onclick="playAudio('81.mp3')">ら</button>
+        <button class="button" onclick="playAudio('82.mp3')">り</button>
+        <button class="button" onclick="playAudio('83.mp3')">る</button>
+        <button class="button" onclick="playAudio('84.mp3')">れ</button>
+        <button class="button" onclick="playAudio('85.mp3')">ろ</button>
+    </div>
+    <div>
+        <!-- 9行目 -->
+        <button class="button" onclick="playAudio('91.mp3')">わ</button>
+        <button class="button" onclick="playAudio('92.mp3')">　</button>
+        <button class="button" onclick="playAudio('93.mp3')">を</button>
+        <button class="button" onclick="playAudio('94.mp3')">　</button>
+        <button class="button" onclick="playAudio('95.mp3')">ん</button>
+    </div>
+    <script>
+        function playAudio(filename) {
+            var audio = new Audio(filename);
+            audio.play();
+        }
+    </script>
+</body>
+</html>    
