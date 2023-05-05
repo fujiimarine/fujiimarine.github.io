@@ -10,6 +10,8 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            padding: 0;
+			overflow: hidden; /* スクロールを禁止 */
         }
 		.button {
 			display: inline-block;
@@ -21,6 +23,8 @@
 			color: white;
 			text-align: center;
 			cursor: pointer;
+            width: calc(75% / 5); /* ボタンの横幅を均等に */
+			height: calc(75vh / 10); /* ボタンの縦幅を均等に */
 		}
 	</style>
 </head>
